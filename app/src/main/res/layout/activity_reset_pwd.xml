@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_reset_pwd"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+tools:context="com.example.sujoy.citi1.UI.ResetPwdActivity"
+android:orientation="vertical"
+android:background="@color/colorAccent"
+android:weightSum="1">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frmTitleResPwd">
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="Reset Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtResPwdCaption"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textColor="@color/CitiFont"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/eTxtResPwdEmail"
+                android:hint="Email"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@android:color/darker_gray"
+                android:layout_weight="0.04"
+                android:enabled="false"
+                android:editable="false"
+                android:maxLength="39" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/eTxtResPwd1"
+                android:hint="Password"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@android:color/darker_gray"
+                android:layout_weight="0.04"
+                android:maxLength="50" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/eTxtResPwd2"
+                android:hint="Repeat Password"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@android:color/darker_gray"
+                android:layout_weight="0.04"
+                android:maxLength="49" />
+
+            <Button
+                android:text="Reset"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:id="@+id/btnResPwdSubmit"
+                android:background="@color/CitiFont"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="15dp" />
+
+            <Button
+                android:text="Cancel"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:id="@+id/btnResPwdCancel"
+                android:background="@android:color/holo_orange_dark"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_weight="0.37"
+                android:layout_marginTop="20dp"
+                android:layout_height="match_parent"
+                android:id="@+id/resFrameConf">
+
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+

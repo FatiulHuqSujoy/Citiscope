@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_poll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.sujoy.citi1.UI.PollActivity"
+    android:orientation="vertical"
+    android:background="@color/colorAccent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frmTitlePoll">
+
+    </FrameLayout>
+
+    <TextView
+        android:text="Nominations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNomListCaption"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="@android:color/holo_orange_light"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:text="Add New Nomination"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:id="@+id/btnAddNewNom"
+        android:background="@color/CitiFont"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="20dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/pollRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

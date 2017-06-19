@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/CitiFont"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:cardBackgroundColor="@color/CitiFont"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/cardview_default_radius"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/CitiFont">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Nomination Name"
+                android:textColor="@color/CitiBackground"
+                android:id="@+id/txtNomCardName"
+                android:textSize="20sp"
+                android:layout_marginBottom="7dp"
+                android:gravity="center"
+                android:layout_marginTop="5dp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="43dp">
+                android:layout_marginBottom="7dp"
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="DesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciption"
+                    android:layout_columnWeight="1"
+                    android:textColor="@color/CitiBackground"
+                    android:id="@+id/txtNomCardDesc"
+                    android:textSize="15sp"
+                    android:background="?attr/colorPrimary"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"/>
+            </ScrollView>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/txtNomCardVoteCount"
+                    android:text="0"
+                    android:enabled="false"
+                    android:gravity="center_vertical|center"
+                    android:textColor="@color/CitiBackground"
+                    android:layout_width="50dp" />
+
+                <Button
+                    android:text="Vote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnNomCardVote"
+                    android:layout_weight="1"
+                    android:layout_marginRight="30dp" />
+
+                <Button
+                    android:text="See Details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnNomCardDetails"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/llAdminBtn"
+                android:layout_marginTop="10dp"></LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

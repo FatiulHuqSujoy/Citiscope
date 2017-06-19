@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_new_nom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.sujoy.citi1.UI.NewNomActivity"
+    android:orientation="vertical"
+    android:background="@color/CitiBackground">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frmTitleNewNom">
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="Add New Nomination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtNewNomCaption"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textColor="@android:color/holo_orange_light"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/txtNewNomName"
+                android:layout_marginBottom="10dp"
+                android:hint="Name"
+                android:maxLength="39" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/txtNewNomDesc"
+                android:hint="Description"
+                android:layout_marginBottom="10dp"
+                android:maxLength="499" />
+
+            <TextView
+                android:text="Sources"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/CitiFont"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_marginBottom="30dp"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/llSrc">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="none"
+                            android:ems="10"
+                            android:id="@+id/editText4"
+                            android:hint="URL"
+                            android:maxLength="49" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:id="@+id/editText3"
+                            android:hint="URL"
+                            android:inputType="none"
+                            android:maxLength="49" />
+                    </LinearLayout>
+
+                    <Button
+                        android:text="Add URL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnAddUrl"
+                        android:layout_marginLeft="130dp"
+                        android:layout_marginRight="130dp" />
+
+                </LinearLayout>
+            </ScrollView>
+
+            <Button
+                android:text="Add Nomination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnNewNomConfirm"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/CitiFont" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_filter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.sujoy.citi1.activities.FilterActivity"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frmTitleFilter"
+        android:background="@color/colorPrimary"
+        >
+
+    </FrameLayout>
+
+    <TextView
+        android:text="Search for Service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtFilterCaption"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="@color/colorAccent"
+        android:paddingTop="10dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:paddingTop="20dp"
+        android:paddingBottom="25dp"
+        android:paddingLeft="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/ll_filters">
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:text="Search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnFilterConfirm"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"
+        />
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:id="@+id/activity_code_confirmation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sujoy.citi1.activities.CodeConfirmationActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="CODE CONFIRMATION"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="Confirmation code is sent to abc@gmail.com"
+        android:textSize="16sp"
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_layout_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_gravity="center"
+        >
+
+        <EditText
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:id="@+id/etxtCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:hint="Enter the code"
+            android:textColorHint="@android:color/white"
+            android:inputType="textPassword"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btnCodeSubmit"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorAccent"
+        android:text="SUBMIT"
+        android:textColor="@android:color/white"
+        />
+
+    <Button
+        android:id="@+id/btnCodeReset"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorAccent"
+        android:text="Resend Code"
+        android:textColor="@android:color/white"
+        />
+
+    <Button
+        android:id="@+id/btnCodeCancel"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorAccent"
+        android:text="Cancel"
+        android:textColor="@android:color/white"
+        />
+
+</LinearLayout>
+

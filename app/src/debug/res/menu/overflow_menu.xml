@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.HomeActivity"
+    
+    >
+
+    <item
+        android:id="@+id/action_sign_in"
+        android:title="Sign In"
+        app:showAsAction="never"
+        android:visibility="visible"
+        tools:visibility="gone"
+        />
+
+
+    <item
+        android:id="@+id/action_sign_up"
+        android:title="Sign Up"
+        app:showAsAction="never"
+        android:visibility="visible"
+        tools:visibility="gone"
+
+        />
+
+    <item
+        android:id="@+id/action_sign_out"
+        android:title="Sign Out"
+        app:showAsAction="never"
+        android:visibility="visible"
+        tools:visibility="gone"
+
+        />
+
+    <item
+        android:id="@+id/action_password_change"
+        android:title="Reset Password"
+        app:showAsAction="never"
+        android:visibility="visible"
+        tools:visibility="gone"
+
+        />
+
+
+</menu>

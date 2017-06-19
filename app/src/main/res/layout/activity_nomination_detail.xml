@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_nomination_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.sujoy.citi1.UI.NominationDetailActivity"
+    android:orientation="vertical"
+    android:background="@color/CitiBackground">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frmTitleNomination">
+
+    </FrameLayout>
+
+    <TextView
+        android:text="Nomination Detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNominationCaption"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="@android:color/holo_orange_light"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/txtNominationName"
+        android:text="lala"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="36sp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        android:layout_marginBottom="7dp"
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="DesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciptionDesciption"
+            android:layout_columnWeight="1"
+            android:textColor="@color/CitiBackground"
+            android:id="@+id/txtNomDetailDesc"
+            android:textSize="15sp"
+            android:background="?attr/colorPrimary"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"/>
+    </ScrollView>
+
+    <TextView
+        android:text="Sources"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNomUrlCaption"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="25dp"
+        android:textSize="18sp"
+        android:textColor="@color/CitiFont" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/urlLinLay" />
+    </ScrollView>
+</LinearLayout>

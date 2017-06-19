@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profile_mod"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.sujoy.citi1.UI.ProfileModActivity"
+    android:orientation="vertical"
+    android:background="@color/CitiBackground"
+    android:weightSum="1">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frmTitleProfMod">
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="Modify Profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtProfModCaption"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textColor="@color/CitiFont"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/eTxtProfName"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/CitiFont"
+                android:textColorHint="@color/CitiFont"
+                android:hint="Name"
+                android:maxLength="39" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/eTxtProfPhone"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/CitiFont"
+                android:textColorHint="@color/CitiFont"
+                android:hint="Phone Number"
+                android:maxLength="14" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/eTxtProfBio"
+                android:layout_weight="0.46"
+                android:textColor="@color/CitiFont"
+                android:layout_marginBottom="10dp"
+                android:hint="Bio"
+                android:textColorHint="@color/CitiFont"
+                android:paddingLeft="10dp"
+                android:maxLength="499" />
+
+            <Button
+                android:text="Modify"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:id="@+id/btnModSubmit"
+                android:background="@color/CitiFont"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="15dp" />
+
+            <Button
+                android:text="Reset"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:id="@+id/btnModReset"
+                android:background="@android:color/holo_orange_dark"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

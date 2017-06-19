@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#90a4ae</color>
+    <color name="colorPrimaryDark">#880e4f</color>
+    <color name="colorAccent">#37474f</color>
+    <color name="CitiBackground">#6823bc</color>
+    <color name="CitiFont">#faaa0b</color>
+
+</resources>
